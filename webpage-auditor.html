@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+		<!--CUstom Styles and Resets-->
+		<link rel="stylesheet" href="/src/style.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Montserrat&display=swap" rel="stylesheet">
+		<!--FOnt Awesome Cdn -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<title>SEO Fixer | Dashboard</title>
+	</head>
+	<body>
+		<nav class="mb-1 navbar navbar-expand-lg navbar-dark  thisHasShadow">
+			<a class="navbar-brand" href="home.html">
+				<img class="img-fluid" src="/assets/images/seo-fixer-logo.png" alt="SEO fixer Logo" >
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="burger"></span>
+			<span class="burger"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light isActive" href="webpage-auditor.html">Webpage Auditor
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="my-audits.html">My Aduits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="my-leads.html"> My Leads </a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="audit-form-builder.html">Audit Form Builder</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="customize.html">Customize</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle waves-effect waves-light" id="settingsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Settings
+						</a>
+						<div class="dropdown-menu dropdown-default" aria-labelledby="settingsDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="billing.html">Billing</a>
+							<a class="dropdown-item waves-effect waves-light" href="upgrade.html">Upgrade</a>
+							<a class="dropdown-item waves-effect waves-light" href="affilate-programme.html">Affilate Programme</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle waves-effect waves-light" id="integrationsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Integrations
+						</a>
+						<div class="dropdown-menu dropdown-default" aria-labelledby="integrationsDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="mailchimp-integration.html">Mailchimp</a>
+							<a class="dropdown-item waves-effect waves-light" href="webhook.html">Webhook</a>
+							<a class="dropdown-item waves-effect waves-light" href="zapier.html">Zapier</a>
+							
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto nav-flex-icons">
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link profile dropdown-toggle waves-effect waves-light" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-user"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="profileDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="profile.html">Profile</a>
+							<a class="dropdown-item waves-effect waves-light" href="changePassword.html">Change Password</a>
+							<a class="dropdown-item waves-effect waves-light" href="#">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="site-section">
+			<div class="container-fluid">
+				<div class="site-section-header">
+					<h1 class="title">What's Your SEO Score?</h1>
+					<p class="sub-title">Enter the URL of any landing page or blog article and see how optimized it is for one keyword or phrase.</p>
+				</div>
+			</div>
+			<div class="site-section-body">
+				<form>
+					<div class="row">
+						<div class="c-input-group col-md-6">
+							<label class="c-input-label" for="searchBox">Enter any webpage address: </label>
+							<input id="searchBox" class="c-input-field w-100" name="" type="text" value="http://">
+						</div>
+						<div class="c-input-group col-md-6">
+							<label class="c-input-label" for="keyword">Enter 1 keyword or phrase </label>
+							<input id="keyword" class="c-input-field w-100" name="" type="text" placeholder="e.g: ecommerce">
+						</div>
+						<div class="c-input-group col-md-6">
+							<label class="c-input-label" for="project">Add to a Tag to this audit</label>
+							<select id="project"  class="c-input-field w-100 select">
+								<option value="" selected>Choose tag</option>
+								<option value="">New Tag</option>
+								
+							</select>
+						</div>
+						<div class="c-input-group col-md-6">
+							<label class="c-input-label" for="language">Prefered Language</label>
+							<select id="language"  class="c-input-field w-100 select">
+								<option value="" selected>English</option>
+								<option value="">Other</option>
+								
+							</select>
+						</div>
+					</div>
+					<div class="mt-3">
+						<button  class="c-button c-form-button hasBlueBackground" type="submit">
+						Let's Go!
+						</button>
+					</div>
+				</form>
+			</div>
+			
+		</section>
+		<script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/src/app.js"></script>
+	</body>
+</html>

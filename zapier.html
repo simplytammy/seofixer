@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+		<!--CUstom Styles and Resets-->
+		<link rel="stylesheet" href="/src/style.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Montserrat&display=swap" rel="stylesheet">
+		<!--FOnt Awesome Cdn -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<title>SEO Fixer | Dashboard</title>
+	</head>
+	<body>
+		<nav class="mb-1 navbar navbar-expand-lg navbar-dark  thisHasShadow">
+			<a class="navbar-brand" href="home.html">
+				<img class="img-fluid" src="/assets/images/seo-fixer-logo.png" alt="SEO fixer Logo" >
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="burger"></span>
+			<span class="burger"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="webpage-auditor.html">Webpage Auditor
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="my-audits.html">My Aduits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="my-leads.html">My Leads</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="audit-form-builder.html">Audit Form Builder</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="customize.html">Customize</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle waves-effect waves-light " id="settingsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Settings
+						</a>
+						<div class="dropdown-menu dropdown-default" aria-labelledby="settingsDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="billing.html">Billing</a>
+							<a class="dropdown-item waves-effect waves-light" href="upgrade.html">Upgrade</a>
+							<a class="dropdown-item waves-effect waves-light" href="affilate-programme.html">Affilate Programme</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle waves-effect waves-light isActive" id="integrationsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Integrations
+						</a>
+						<div class="dropdown-menu dropdown-default" aria-labelledby="integrationsDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="mailchimp-integration.html">Mailchimp</a>
+							<a class="dropdown-item waves-effect waves-light" href="webhook.html">Webhook</a>
+							<a class="dropdown-item waves-effect waves-light" href="zapier.html">Zapier</a>
+							
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto nav-flex-icons">
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link profile dropdown-toggle waves-effect waves-light" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-user"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="profileDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="profile.html">Profile</a>
+							<a class="dropdown-item waves-effect waves-light" href="changePassword.html">Change Password</a>
+							<a class="dropdown-item waves-effect waves-light" href="#">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="site-section">
+			<div class="container-fluid">
+				<div class="site-section-header">
+					<h1 class="title">Zapier</h1>
+					<p class="sub-title">Send new leads straight to your mailing list at MailChimp.</p>
+					<p>
+						<a class="infoLink"  data-toggle="collapse" href="#info" role="button" aria-expanded="false" aria-controls="info">
+							How it works <i class="fa fa-info-circle "></i>
+						</a>
+					</p>
+					<div class="collapse" id="info">
+						<div class="card card-body info">
+							<p>You will need your Integration Key below to connect Zapier  </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-section-body">
+				<div class="audit-form-builder pb-5">
+					<form>
+						<div class="container-fluid">
+							<div class="col-md-6">
+								<div class="container-fluid  mt-2 pb-4">
+									<div class="c-input-group">
+										<label for="zapierIntegrationKey" class="c-input-label">Integration Key</label>
+										<input type="text" class="c-input-field w-100" id="zapierIntegrationKey" placeholder="*****">
+										<p>
+											Get Your Zapier
+											<strong> Integration Key</strong>
+											<a href="#"> Here</a>
+										</p>
+									</div>
+									
+								</div>
+							</div>
+							<div class="ml-4">
+								<button  class="c-button c-form-button hasBlueBackground" type="submit">
+								Connect Zapier
+								</button>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+			
+		</section>
+		<script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/src/app.js"></script>
+		
+	</body>
+</html>

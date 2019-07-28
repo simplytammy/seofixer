@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+		<!--CUstom Styles and Resets-->
+		<link rel="stylesheet" href="/src/style.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Montserrat&display=swap" rel="stylesheet">
+		<!--FOnt Awesome Cdn -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<title>SEO Fixer | Dashboard</title>
+	</head>
+	<body>
+		<nav class="mb-1 navbar navbar-expand-lg navbar-dark  thisHasShadow">
+<a class="navbar-brand" href="home.html">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="burger"></span>
+			<span class="burger"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="webpage-auditor.html">Webpage Auditor
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="my-audits.html">My Aduits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="my-leads.html">My Leads</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light isActive" href="audit-form-builder.html">Audit Form Builder</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect waves-light" href="customize.html">Customize</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle waves-effect waves-light" id="settingsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Settings
+						</a>
+						<div class="dropdown-menu dropdown-default" aria-labelledby="settingsDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="billing.html">Billing</a>
+							<a class="dropdown-item waves-effect waves-light" href="upgrade.html">Upgrade</a>
+							<a class="dropdown-item waves-effect waves-light" href="affilate-programme.html">Affilate Programme</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle waves-effect waves-light" id="integrationsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Integrations
+						</a>
+						<div class="dropdown-menu dropdown-default" aria-labelledby="integrationsDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="mailchimp-integration.html">Mailchimp</a>
+							<a class="dropdown-item waves-effect waves-light" href="webhook.html">Webhook</a>
+							<a class="dropdown-item waves-effect waves-light" href="zapier.html">Zapier</a>
+							
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto nav-flex-icons">
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link profile dropdown-toggle waves-effect waves-light" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-user"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="profileDropdown">
+							<a class="dropdown-item waves-effect waves-light" href="profile.html">Profile</a>
+							<a class="dropdown-item waves-effect waves-light" href="changePassword.html">Change Password</a>
+							<a class="dropdown-item waves-effect waves-light" href="#">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="site-section">
+			<div class="container-fluid">
+				<div class="site-section-header">
+					<h1 class="title">Audit form Builder</h1>
+					<p class="sub-title">We recommend embedding several forms throughout your site.</p>
+				</div>
+			</div>
+			<div class="site-section-body">
+				<div class="audit-form-builder pb-5">
+					<form>
+						<div class="row">
+							<div class="col-md-6">
+								<h3>1. Choose an audit form</h3>
+								<div class="container-fluid card m-h-1">
+									<div class="audit-form-templates row">
+										<div class="col-md-4">
+											<input id="audit-form-template-1" type="radio" name="credit-card" value="audit-form-template-1"  />
+											<label class="audit-form-template-label audit-form-template-1" for="audit-form-template-1" style="background-image: url('https://www.formstack.com/images/templates/thumbs/booking_form_template.jpg');">Large</label>
+										</div>
+										<div class="col-md-4">
+											<input id="audit-form-template-2" type="radio" name="credit-card" value="audit-form-template-2" />
+											<label class="audit-form-template-label audit-form-template-2" for="audit-form-template-2" style="background-image: url('https://www.formstack.com/images/templates/thumbs/booking_form_template.jpg');">Medium</label>
+										</div>
+										<div class="col-md-4">
+											<input id="audit-form-template-3" type="radio" name="credit-card" value="audit-form-template-3" />
+											<label class="audit-form-template-label audit-form-template-3" for="audit-form-template-3" style="background-image: url('https://www.formstack.com/images/templates/thumbs/booking_form_template.jpg');">Small</label>
+										</div>
+									</div>
+									<hr />
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h3>2. Select Form Colors</h3>
+								<div class="container-fluid card pt-2 pb-2">
+									<div class="row">
+										<div class="col-md-6">
+											<label for="formBackground" class="c-input-label">Form Background Color</label>
+											<input class="  color colorPicker" type="color" id="formBackground" value="#ff0345">
+										</div>
+										<div class="col-md-6 mt-1">
+											<label for="ctaButton" class="c-input-label">CTA Button Color</label>
+											<input class="  color colorPicker" type="color" id="ctaButton" value="#adaefa">
+										</div>
+										<div class="col-md-6 mt-1">
+											<label for="ctaText" class="c-input-label">CTA Text Color</label>
+											<input class="  color colorPicker" type="color" id="ctaText" value="#753513">
+										</div>
+										<div class="col-md-6 mt-1">
+											<label for="loadingBar" class="c-input-label">Loading Bar Color</label>
+											<input class="  color colorPicker" type="color" id="loadingBar" value="#90315a">
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-6 mt-5">
+								<h3>3.Customize header and description text.</h3>
+								<div class="container-fluid card m-h-1 mt-2">
+									<div class="c-input-group">
+										<label for="fontSelect" class="c-input-label">Select your font</label>
+										<select class="c-input-field select w-100" id="fontSelect">
+											<option selected>Arial</option>
+											<option value="contact-us">Roboto</option>
+										</select>
+									</div>
+									<div class="c-input-group">
+										<label for="headerText" class="c-input-label">Edit Header Text</label>
+										<input type="text" class="c-input-field w-100" id="headerText" value="My SEO score is">
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-md-6 mt-5">
+								<h3>4.Set your field options.</h3>
+								<div class="container-fluid card m-h-1 mt-2">
+									<div class="c-input-group w-100">
+										<label class="radio-inline"><input type="radio" name="op1" checked> Show name field</label>
+										<label class="radio-inline"><input type="radio" name="op1">Hide name field</label>
+										<label class="radio-inline"><input type="radio" name="op1">Show and * require name field</label>
+									</div>
+									<div class="c-input-group w-100">
+										<label class="radio-inline"><input type="radio" name="op2" checked>Show phone field</label>
+										<label class="radio-inline"><input type="radio" name="op2">Hide phone field</label>
+										<label class="radio-inline"><input type="radio" name="op2">Show and * require phone field</label>
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-md-6 mt-5">
+								<h3>5. Edit CTA Button Text and Language.</h3>
+								<div class="container-fluid card m-h-1 mt-2">
+									<div class="c-input-group">
+										<label for="ctaButtonText" class="c-input-label">CTA Button Text</label>
+										<input type="text" class="c-input-field w-100" id="ctaButtonText" value="My SEO score is">
+									</div>
+									
+									<div class="c-input-group">
+										<label for="language" class="c-input-label">Language</label>
+										<select class="c-input-field select w-100" id="language">
+											<option selected>English</option>
+											<option value="contact-us">Other</option>
+										</select>
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-md-6 mt-5">
+								<h3>6. Action After Complete Audit</h3>
+								<div class="container-fluid card m-h-1 mt-2">
+									<div class="c-input-group w-100">
+										<label class="radio-inline"><input type="radio" name="op3" checked> Show the finished audit immediately </label>
+										<label class="radio-inline"><input type="radio" name="op3">Show popup so I can follow up with the lead myself </label>
+										<label class="radio-inline"><input type="radio" name="op3"> Redirect to a URL (e.g., a success page) </label>
+									</div>
+									<div class="c-input-group w-100">
+										<label class="radio-inline"><input type="radio" name="op4" checked>Send auto-reply (with PDF)</label>
+										<label class="radio-inline"><input type="radio" name="op4">Send auto-reply (without PDF) </label>
+										<label class="radio-inline"><input type="radio" name="op4">Disable auto-reply </label>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+						<div class="mt-3">
+							<button  class="c-button c-form-button hasBlueBackground" type="submit">
+							Save Settings!
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="container-fluid card m-h-1 mt-2">
+							<div class="c-input-group">
+								<label for="embedCode" class="c-input-label ">Embed Code to Your Website</label>
+								<textarea id="embedCode" name=""  class="c-input-field w-100 textarea" value=""></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="container-fluid card m-h-1 mt-2">
+							<div class="c-input-group">
+								<label for="embedKey" class="c-input-label ">Your Embed Key</label>
+								<div class="input-group mb-1" id="holder">
+									<p id="embedKey" class="c-input-field w-100">b9a153799e8b6ec21df26c7b2624ccf22c0cb2d5</p>
+									<div class="">
+										<button onclick="copyToClipboard('#embedKey')" class="btn btn-sm btn-outline-secondary" type="button">Copy <i class="fa fa-copy"></i></button>											<span id="message" style="display:none;" class="message">Copied to Clipboard!</span>
+									</div>
+								</div>
+							</div>
+							<div class="c-input-group">
+								<label for="emailTo" class="c-input-label ">Email Embed Key To Developer</label>
+								<div class="input-group mb-1">
+									<input type="email" id="emailTo" class="c-input-field w-100" placeholder="yourdevelopers@email.com">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/src/app.js"></script>
+		<script>
+			//CopyToClipboard
+		const copyToClipboard =  (element) => {
+		var $temp = $("<input>");
+		$("#holder").append($temp);
+		$temp.val($(element).text()).select();
+		document.execCommand("copy");
+		$temp.remove();
+		$('#message').fadeIn('slow', function(){
+		$('#message').delay(2000).fadeOut();
+		});
+		}
+		</script>
+	</body>
+</html>
